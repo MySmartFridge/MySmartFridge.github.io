@@ -84,15 +84,8 @@ body{
 }
 
 
-
-
-
-
-
-
-
 .login{
-	position: fixed;
+	position: absolute;
 	top: calc(50% - 200px);
 	left: calc(50% - 50px);
 	height: 150px;
@@ -211,7 +204,7 @@ body{
 	color: #5379fa !important;
 }
 .signup{
-	position: fixed;
+	position: absolute;
 	top: calc(50% + 50px);
 	left: calc(50% - 50px);
 	height: 150px;
@@ -294,10 +287,12 @@ body{
 
 			<div>Smart<span>Fridge</span></div>
 		</div>
-		<div class="mini">
-			<div style="position: fixed; top:175px; left:550px; width:200px; height:25px">Login:</div>
-		</div>
+
 		<div class="login">
+			<div class="mini">
+				<div>Login:</div>
+
+			</div>
 			<div class="error" style="display:none"></div>
 			<input type="text" id="login-username" placeholder="Username" />
 			<input type="password" id="login-password" placeholder="Password" />
@@ -305,12 +300,12 @@ body{
 				<input type="button" value="Forgot?">
 		</div>
 
-		<div class="mini">
-			<div style="position: fixed; top:425px; left:550px; width:200px; height:25px">Register:</div>
-		</div>
+
 
 		<div class="signup">
-
+			<div class="mini">
+				<div>Register:</div>
+			</div>
 			<div class="error" style="display:none"></div>
 			<input type="text" id="signup-username" placeholder="Preferred Username" />
 			<input type="password" id="signup-password" placeholder="Preferred Password" />
