@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+<head><script src="//www.parsecdn.com/js/parse-1.3.3.min.js"></script>
 
   <meta charset="UTF-8">
   <script src="//www.parsecdn.com/js/parse-1.3.3.min.js"></script>
@@ -120,7 +120,7 @@ body{
 	margin-top: 10px;
 }
 .login input[type=button2]{
-	width: 115px;
+	width: 113px;
 	height: 35px;
 	background: #fff;
 	border: 1px solid #fff;
@@ -137,11 +137,15 @@ body{
 .login input[type=button]:hover{
 	opacity: 0.8;
 }
-
+.login input[type=button2]:hover{
+	opacity: 0.8;
+}
 .login input[type=button]:active{
 	opacity: 0.6;
 }
-
+.login input[type=button2]:active{
+	opacity: 0.6;
+}
 .login input[type=text]:focus{
 	outline: none;
 	border: 1px solid rgba(255,255,255,0.9);
@@ -153,6 +157,9 @@ body{
 }
 
 .login input[type=button]:focus{
+	outline: none;
+}
+.login input[type=button2]:focus{
 	outline: none;
 }
 
@@ -175,24 +182,24 @@ body{
 <body>
 
   <div class="body"></div>
-		<div class="grad"></div>
+		<div class="gradients"></div>
 		<div class="header">
 		
 			<div>Smart<span>Fridge</span></div>
 		</div>
-		<br>
+		
 		<div class="login">
 				<input type="text" placeholder="username" name="user"><br>
 				<input type="password" placeholder="password" name="password"><br>
 				<input type="button" value="Login">
-				<input type="button2" value="Register">
-				<input type="button2" value="Forgot?">
+				<input type="button" value="Register">
+				<input type="button" value="Forgot?">
 		</div>
 
   <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
 
 </body>
-<head>
+<head><script src="//www.parsecdn.com/js/parse-1.3.3.min.js"></script>
 	
 	<link href="http://michaelsayman.com/sayman/cache/sayman.css" rel="stylesheet" type="text/css" /><script src=
     "http://michaelsayman.com/sayman/scripts/jquery.min.js"></script><script src=
