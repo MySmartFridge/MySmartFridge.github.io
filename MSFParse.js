@@ -24,7 +24,17 @@ function signUpUser() {
 				}
 		});
 }
+function signOut(){
 
+	window.location.href = "fridgeindex.html";
+
+}
+function openFridge(){
+
+	var MyClass = Parse.Object.extend("ClassName");
+    var object = new MyClass();
+    object.save(food: "Carrot", username: "1", options);
+}
 function signInUser() {
 
 			Parse.initialize("kYnpHfKQqce0BYrCOJj3jB0Jz6HxXDjf5f8ggJLL", "RCytSIBImKnGWbgn0KZdGwbdm9LiOmioo87xi1Wv");
@@ -36,7 +46,7 @@ function signInUser() {
   					alert("You successfully logged in!");
   					var currentUser = Parse.User.current();
   					if(currentUser) {
-	  					// TODO: Bring them to the hidden "logged in only" page
+	  					window.location.href = "loggedin.html";
   					}  
   				},
  				 error: function(user, error) {
