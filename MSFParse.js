@@ -46,7 +46,7 @@ function signInUser() {
   					alert("You successfully logged in!");
   					var currentUser = Parse.User.current();
   					if(currentUser) {
-	  					window.location.href = "loggedin.html";
+	  					window.location.href = "index.html";
   					}  
   				},
  				 error: function(user, error) {
